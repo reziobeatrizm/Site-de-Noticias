@@ -1,0 +1,326 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ===== HEADER ===== */
+
+/* HEADER LOGO - O fundo branco que atravessa a tela */
+.header-ufc {
+    background-color: #ffffff; /* Branco total */
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+/* O texto UFC propriamente dito */
+.logo-box h1 {
+    font-family: 'Impact', 'Arial Black', sans-serif; /* Fonte robusta igual ao UFC */
+    font-size: 50px;       /* Tamanho grande */
+    letter-spacing: 5px;   /* Espaçamento entre as letras */
+    color: #000000;        /* Cor PRETA para destacar no fundo branco */
+    display: inline-block;
+    line-height: 1;
+}
+
+header {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.icones-header {
+  display: flex;
+  gap: 30px;
+}
+
+header div:first-child img {
+  height: 60px;
+}
+
+header nav {
+  display: flex;
+  gap: 60px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+header nav a:hover {
+  color: #e60000;
+  transition: 1s;
+}
+
+/* RESET E CORES */
+.pagina-esportes {
+    background-color: #3d0303; /* Bordô escuro do fundo */
+    font-family: 'Times New Roman', serif;
+    padding: 20px;
+    color: #000;
+}
+
+/* HEADER LOGO */
+.header-ufc {
+    background-color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-box h1 {
+    font-family: 'Impact', sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+/* LAYOUT */
+.container-conteudo {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.coluna-principal {
+    flex: 2;
+}
+
+/* CARD NOTICIA 1 */
+.card-noticia {
+    background-color: #fff;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-noticia img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.info-noticia {
+    padding: 20px;
+}
+
+.info-noticia h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-noticia p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* NOTICIA HORIZONTAL (HOLLOWAY) */
+.noticia-horizontal {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.banner-luta {
+    position: relative;
+    width: 60%;
+}
+
+.banner-luta img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.selo-ufc {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #b19541;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.titulo-sobreposto {
+    background: white;
+    padding: 20px;
+    position: absolute;
+    bottom: -30px;
+    left: 20px;
+    right: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.texto-lateral {
+    width: 40%;
+    color: white;
+    padding-top: 50px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* SIDEBAR DESTAQUE */
+.sidebar-destaque {
+    flex: 1;
+    background-color: #000;
+    color: #fff;
+    padding: 25px;
+    border-radius: 4px;
+    height: fit-content;
+}
+
+.sidebar-destaque h3 {
+    border-bottom: 1px solid #444;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.item-destaque {
+    border-bottom: 1px solid #333;
+    padding: 15px 0;
+}
+
+.item-destaque p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+.tag-noticia {
+    font-size: 10px;
+    color: #888;
+    letter-spacing: 1px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 80px;
+  margin-top: 80px;
+}
+
+/* Container principal */
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+/* Colunas da esquerda */
+.footer-col {
+  font-size: 14px;
+}
+
+.footer-col h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.footer-col p {
+  margin: 4px 0;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.footer-col p:hover {
+  opacity: 1;
+}
+
+/* Logo NEWS (CENTRO ABSOLUTO) */
+.footer-logo {
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 90px; /* ajusta conforme seu PNG */
+}
+
+/* Texto copyright */
+.footer-copy {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 8px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-social .icones {
+  display: flex;
+  gap: 14px;
+}
+
+.btn-contato {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn-contato:hover {
+  opacity: 0.8;
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+
+  /* empurra o bloco para a direita */
+  margin-left: auto;
+}
+
+/* Ícones */
+.footer-social .icones {
+  display: flex;
+  gap: 18px;
+}
+
+.footer-social i {
+  font-size: 22px; /* aumentou */
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-social i:hover {
+  transform: scale(1.15);
+  opacity: 0.85;
+}
+
+/* Botão */
+.btn-contato {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 8px 20px; /* maior */
+  border-radius: 24px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-contato:hover {
+  opacity: 0.85;
+}

@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.icones-header {
+  display: flex;
+  gap: 30px;
+}
+
+header div:first-child img {
+  height: 60px;
+}
+
+header nav {
+  display: flex;
+  gap: 60px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+header nav a:hover {
+  color: #e60000;
+  transition: 1s;
+}
+
+body {
+   
+    /* DEGRADÊ NO BODY: */
+    background: linear-gradient(180deg, #0043ff 0%, #316eff 25%, #e6eefc 100%);
+
+}
+
+/* ===== MAIN ===== */
+
+.titulo-principal {
+    color: white; /* Define a cor do texto como branco */
+}
+
+/* 3. SEÇÃO DOS JOGOS (Fundo Azul Claro / Gelado) */
+.secao-jogos {
+    background-color: #316eff; /* Tom de azul mais claro/médio que fica atrás dos cards */
+    padding: 50px 5%;
+    min-height: 100vh;
+    /* Removemos o arredondamento se quiser que o azul ocupe a tela toda abaixo do header */
+}
+
+/* 4. GRADE (GRID) - 6 Colunas como na imagem */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+/* 5. O CARD DO JOGO (Azul Escuro) */
+.game-card {
+    background-color: #001d66; /* Azul bem escuro dos cards */
+    border-radius: 40px; /* Bordas bem redondas estilo PlayStation */
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    
+    /* Preparação para o efeito de pular */
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                box-shadow 0.3s ease, 
+                background-color 0.3s ease;
+}
+
+/* 6. EFEITO DE PASSAR O MOUSE (HOVER) */
+.game-card:hover {
+    transform: translateY(-15px); /* Efeito de pular */
+    background-color: #002ba3; /* Clareia levemente o azul do card */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Sombra para dar altura */
+}
+
+/* 7. IMAGEM DO JOGO */
+.game-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Garante que a capa seja sempre um quadrado perfeito */
+    object-fit: cover;
+    border-radius: 25px; /* Arredondamento da capa interna */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover img {
+    transform: scale(1.05); /* Leve zoom na imagem quando pula */
+}
+
+/* 8. TEXTOS DO CARD */
+.game-info h3 {
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    min-height: 30px; /* Alinha os títulos */
+    letter-spacing: 0.5px;
+}
+
+.game-info p {
+    font-size: 10px;
+    line-height: 1.4;
+    color: #cbd5e0; /* Cor cinza clara para a descrição */
+}
+
+/* 9. RESPONSIVIDADE (Ajuste automático para telas menores) */
+@media (max-width: 1400px) {
+    .games-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+@media (max-width: 900px) {
+    .games-grid { grid-template-columns: repeat(2, 1fr); }
+    .titulo-principal { font-size: 20px; }
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 80px;
+  margin-top: 80px;
+}
+
+/* Container principal */
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+/* Colunas da esquerda */
+.footer-col {
+  font-size: 14px;
+}
+
+.footer-col h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.footer-col p {
+  margin: 4px 0;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.footer-col p:hover {
+  opacity: 1;
+}
+
+/* Logo NEWS (CENTRO ABSOLUTO) */
+.footer-logo {
+  text-align: center;
+}
+
+.footer-logo img {
+  width: 90px; /* ajusta conforme seu PNG */
+}
+
+/* Texto copyright */
+.footer-copy {
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 8px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-social .icones {
+  display: flex;
+  gap: 14px;
+}
+
+.btn-contato {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn-contato:hover {
+  opacity: 0.8;
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+
+  /* empurra o bloco para a direita */
+  margin-left: auto;
+}
+
+/* Ícones */
+.footer-social .icones {
+  display: flex;
+  gap: 18px;
+}
+
+.footer-social i {
+  font-size: 22px; /* aumentou */
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.footer-social i:hover {
+  transform: scale(1.15);
+  opacity: 0.85;
+}
+
+/* Botão */
+.btn-contato {
+  background: #fff;
+  color: #000;
+  border: none;
+  padding: 8px 20px; /* maior */
+  border-radius: 24px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-contato:hover {
+  opacity: 0.85;
+}
