@@ -51,15 +51,14 @@ body {
 /* ===== MAIN ===== */
 
 .titulo-principal {
-    color: white; /* Define a cor do texto como branco */
+    color: white; 
 }
 
-/* 3. SEÇÃO DOS JOGOS (Fundo Azul Claro / Gelado) */
 .secao-jogos {
-    background-color: #316eff; /* Tom de azul mais claro/médio que fica atrás dos cards */
+    background-color: #316eff; 
     padding: 50px 5%;
     min-height: 100vh;
-    /* Removemos o arredondamento se quiser que o azul ocupe a tela toda abaixo do header */
+ 
 }
 
 /* 4. GRADE (GRID) - 6 Colunas como na imagem */
@@ -72,7 +71,7 @@ body {
 /* 5. O CARD DO JOGO (Azul Escuro) */
 .game-card {
     background-color: #001d66; /* Azul bem escuro dos cards */
-    border-radius: 40px; /* Bordas bem redondas estilo PlayStation */
+    border-radius: 40px;
     padding: 18px;
     display: flex;
     flex-direction: column;
@@ -96,9 +95,9 @@ body {
 /* 7. IMAGEM DO JOGO */
 .game-card img {
     width: 100%;
-    aspect-ratio: 1 / 1; /* Garante que a capa seja sempre um quadrado perfeito */
+    aspect-ratio: 1 / 1; 
     object-fit: cover;
-    border-radius: 25px; /* Arredondamento da capa interna */
+    border-radius: 25px; 
     margin-bottom: 15px;
     transition: transform 0.3s ease;
 }
@@ -176,7 +175,7 @@ footer {
 }
 
 .footer-logo img {
-  width: 90px; /* ajusta conforme seu PNG */
+  width: 90px; 
 }
 
 /* Texto copyright */
@@ -216,8 +215,6 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 14px;
-
-  /* empurra o bloco para a direita */
   margin-left: auto;
 }
 
@@ -228,7 +225,7 @@ footer {
 }
 
 .footer-social i {
-  font-size: 22px; /* aumentou */
+  font-size: 22px; 
   cursor: pointer;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -243,7 +240,7 @@ footer {
   background: #fff;
   color: #000;
   border: none;
-  padding: 8px 20px; /* maior */
+  padding: 8px 20px; 
   border-radius: 24px;
   font-size: 13px;
   font-weight: bold;

@@ -85,7 +85,7 @@ header nav a:hover {
 /* HOMEM ARANHA (Destaque) */
 .img-destaque { 
     width: 100%; 
-    height: 300px; /* Altura fixa para não ficar gigante */
+    height: 300px; 
     object-fit: cover;
     border-radius: 4px; 
     margin-bottom: 10px;
@@ -96,7 +96,7 @@ header nav a:hover {
 .card-jornal-horizontal, 
 .card-jornal-txt-lateral {
     display: flex;
-    align-items: flex-start; /* Alinha o texto pelo topo da imagem */
+    align-items: flex-start; 
     gap: 12px;
     margin-bottom: 20px;
 }
@@ -104,8 +104,8 @@ header nav a:hover {
 .img-mini-meme, 
 .img-col-2, 
 .img-col-3 {
-    width: 110px;  /* Largura fixa padrão jornal */
-    height: 140px; /* Altura fixa para manter o padrão visual */
+    width: 110px;  
+    height: 140px; 
     object-fit: cover; 
     flex-shrink: 0;
     border: 1px solid #ddd;
@@ -170,7 +170,7 @@ p { font-size: 11.5px; line-height: 1.4; text-align: justify; margin-bottom: 5px
 .bloco-info-filme {
   display: flex;
   gap: 25px;
-  flex: 1.8; /* Ocupa mais espaço */
+  flex: 1.8; 
 }
 
 .poster {
@@ -220,13 +220,13 @@ p { font-size: 11.5px; line-height: 1.4; text-align: justify; margin-bottom: 5px
   justify-content: space-between;
   gap: 50px;
   margin-top: 30px;
-  align-items: flex-start; /* Alinha o topo do filme com o topo dos trailers */
+  align-items: flex-start; 
 }
 
 /* BLOCO ESQUERDO: Poster e Textos */
 .bloco-info-filme {
   display: flex;
-  flex-direction: column; /* Organiza info e sinopse verticalmente dentro da coluna */
+  flex-direction: column;
   flex: 1.8;
 }
 
@@ -285,12 +285,11 @@ p { font-size: 11.5px; line-height: 1.4; text-align: justify; margin-bottom: 5px
 
 /* Coluna da Esquerda */
 .conteudo-filme-principal {
-  flex: 2; /* Ocupa mais espaço que os trailers */
+  flex: 2;
   display: flex;
-  flex-direction: column; /* Faz a sinopse ficar embaixo */
+  flex-direction: column; 
 }
 
-/* Bloco que contém Pôster e Dados lado a lado */
 .topo-filme {
   display: flex;
   gap: 25px;
@@ -338,8 +337,8 @@ p { font-size: 11.5px; line-height: 1.4; text-align: justify; margin-bottom: 5px
 /* CONTAINER PRINCIPAL */
 .item-streaming {
   display: flex;
-  flex-direction: row; /* Força a ficar um ao lado do outro */
-  flex-wrap: nowrap;    /* Impede que os trailers caiam para baixo */
+  flex-direction: row;
+  flex-wrap: nowrap;  
   gap: 40px;
   margin-top: 30px;
   align-items: flex-start;
@@ -348,8 +347,8 @@ p { font-size: 11.5px; line-height: 1.4; text-align: justify; margin-bottom: 5px
 
 /* COLUNA DA ESQUERDA (Info do Filme) */
 .coluna-filme {
-  flex: 2; /* Ocupa 60% do espaço */
-  min-width: 0; /* Evita que o conteúdo estoure o flex */
+  flex: 2; 
+  min-width: 0;
 }
 
 .topo-info {
@@ -363,18 +362,18 @@ p { font-size: 11.5px; line-height: 1.4; text-align: justify; margin-bottom: 5px
   height: 260px;
   object-fit: cover;
   border-radius: 8px;
-  flex-shrink: 0; /* Impede que o poster amasse */
+  flex-shrink: 0; 
 }
 
 /* COLUNA DA DIREITA (Trailers) */
 .coluna-trailers {
-  flex: 1.2; /* Ocupa 40% do espaço */
-  min-width: 320px; /* Garante que os trailers tenham um tamanho mínimo */
+  flex: 1.2; 
+  min-width: 320px; 
 }
 
 .trailers-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas de miniaturas */
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 
@@ -384,7 +383,7 @@ p { font-size: 11.5px; line-height: 1.4; text-align: justify; margin-bottom: 5px
 
 .trailer-item img {
   width: 100%;
-  height: 120px; /* Altura vertical para combinar com o layout */
+  height: 120px; 
   object-fit: cover;
   border-radius: 10px;
 }
@@ -427,14 +426,14 @@ p { font-size: 11.5px; line-height: 1.4; text-align: justify; margin-bottom: 5px
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 60px; /* Espaço entre um filme e outro */
+    gap: 60px; 
 }
 
 /* BLOCO DO FILME */
 .item-filme {
     display: flex;
     flex-direction: column;
-    max-width: 800px; /* Ajusta a largura para não espalhar demais na tela */
+    max-width: 800px;
 }
 
 /* ALINHAMENTO IMAGEM + DADOS */
@@ -456,7 +455,7 @@ p { font-size: 11.5px; line-height: 1.4; text-align: justify; margin-bottom: 5px
 .dados-lista h2 {
     font-size: 32px;
     margin-bottom: 10px;
-    font-family: sans-serif; /* Estilo mais moderno como na foto */
+    font-family: sans-serif; 
 }
 
 .meta {
@@ -492,18 +491,16 @@ p { font-size: 11.5px; line-height: 1.4; text-align: justify; margin-bottom: 5px
     margin-top: 10px;
 }
 
-/* Container que agrupa a lista de filmes abaixo do destaque */
 .lista-outros-filmes {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 60px; /* Espaço entre cada filme da lista */
+    gap: 60px; 
 }
 
-/* O item do filme em si */
 .item-filme {
     display: flex;
-    flex-direction: column; /* Faz com que a sinopse fique em uma linha nova */
+    flex-direction: column; 
 }
 
 /* Bloco superior: Pôster ao lado dos Dados */
@@ -514,7 +511,7 @@ p { font-size: 11.5px; line-height: 1.4; text-align: justify; margin-bottom: 5px
 }
 
 .img-poster-lista {
-    width: 200px; /* Largura fixa para manter o padrão */
+    width: 200px; 
     height: 300px;
     object-fit: cover;
     border-radius: 12px;
@@ -550,7 +547,6 @@ p { font-size: 11.5px; line-height: 1.4; text-align: justify; margin-bottom: 5px
     background-color: #d1d1d1;
 }
 
-/* Sinopse que fica embaixo da foto e dos dados */
 .sinopse-lista {
     margin-top: 15px;
     font-size: 15px;
@@ -602,7 +598,7 @@ footer {
 }
 
 .footer-logo img {
-  width: 90px; /* ajusta conforme seu PNG */
+  width: 90px; 
 }
 
 /* Texto copyright */
@@ -643,7 +639,6 @@ footer {
   align-items: center;
   gap: 14px;
 
-  /* empurra o bloco para a direita */
   margin-left: auto;
 }
 
@@ -654,7 +649,7 @@ footer {
 }
 
 .footer-social i {
-  font-size: 22px; /* aumentou */
+  font-size: 22px;
   cursor: pointer;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -669,7 +664,7 @@ footer {
   background: #fff;
   color: #000;
   border: none;
-  padding: 8px 20px; /* maior */
+  padding: 8px 20px; 
   border-radius: 24px;
   font-size: 13px;
   font-weight: bold;

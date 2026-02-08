@@ -6,7 +6,7 @@
 
 /* ===== HEADER ===== */
 
-/* HEADER LOGO - O fundo branco que atravessa a tela */
+
 .header-ufc {
     background-color: #ffffff; /* Branco total */
     padding: 15px 0;
@@ -15,12 +15,11 @@
     width: 100%;
 }
 
-/* O texto UFC propriamente dito */
 .logo-box h1 {
-    font-family: 'Impact', 'Arial Black', sans-serif; /* Fonte robusta igual ao UFC */
-    font-size: 50px;       /* Tamanho grande */
-    letter-spacing: 5px;   /* Espaçamento entre as letras */
-    color: #000000;        /* Cor PRETA para destacar no fundo branco */
+    font-family: 'Impact', 'Arial Black', sans-serif; 
+    font-size: 50px;       
+    letter-spacing: 5px;   
+    color: #000000;        
     display: inline-block;
     line-height: 1;
 }
@@ -61,9 +60,8 @@ header nav a:hover {
   transition: 1s;
 }
 
-/* RESET E CORES */
 .pagina-esportes {
-    background-color: #3d0303; /* Bordô escuro do fundo */
+    background-color: #3d0303; 
     font-family: 'Times New Roman', serif;
     padding: 20px;
     color: #000;
@@ -247,7 +245,7 @@ footer {
 }
 
 .footer-logo img {
-  width: 90px; /* ajusta conforme seu PNG */
+  width: 90px; 
 }
 
 /* Texto copyright */
@@ -287,8 +285,6 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 14px;
-
-  /* empurra o bloco para a direita */
   margin-left: auto;
 }
 
@@ -299,7 +295,7 @@ footer {
 }
 
 .footer-social i {
-  font-size: 22px; /* aumentou */
+  font-size: 22px; 
   cursor: pointer;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -314,7 +310,7 @@ footer {
   background: #fff;
   color: #000;
   border: none;
-  padding: 8px 20px; /* maior */
+  padding: 8px 20px; 
   border-radius: 24px;
   font-size: 13px;
   font-weight: bold;

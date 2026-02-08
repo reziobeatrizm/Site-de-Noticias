@@ -47,8 +47,8 @@ header nav a:hover {
 ========================= */
 .container-atualidades {
   max-width: 1200px;
-  margin: 40px auto;       /* margem igual esquerda/direita */
-  padding: 0 20px;         /* respiro simétrico */
+  margin: 40px auto;     
+  padding: 0 20px;      
   display: grid;
   grid-template-columns: 1fr 1fr 400px;
   grid-template-areas:
@@ -180,7 +180,7 @@ header nav a:hover {
 ========================= */
 .container-proa-alinhado {
   max-width: 1200px;
-  margin: 80px auto;     /* alinhado ao grid principal */
+  margin: 80px auto;     
   padding: 0 20px;
   display: flex;
   justify-content: center;
@@ -195,7 +195,7 @@ header nav a:hover {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin: 0 auto;        /* centralização perfeita */
+  margin: 0 auto;        
 }
 
 /* =========================
@@ -207,7 +207,7 @@ header nav a:hover {
 
 .logos {
   display: flex;
-  flex-direction: column; /* PROA em cima, SERASA embaixo */
+  flex-direction: column; 
   gap: 10px;
   margin-bottom: 15px;
 }
@@ -289,7 +289,7 @@ header nav a:hover {
 
 .card-proa-fundo {
   margin: 0 auto;
-  transform: translateX(250px); /* empurra só o card */
+  transform: translateX(250px);
 }
 
 /* ===== FOOTER ===== */
@@ -335,7 +335,7 @@ footer {
 }
 
 .footer-logo img {
-  width: 90px; /* ajusta conforme seu PNG */
+  width: 90px; 
 }
 
 /* Texto copyright */
@@ -375,8 +375,6 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 14px;
-
-  /* empurra o bloco para a direita */
   margin-left: auto;
 }
 
@@ -387,7 +385,7 @@ footer {
 }
 
 .footer-social i {
-  font-size: 22px; /* aumentou */
+  font-size: 22px; 
   cursor: pointer;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -402,7 +400,7 @@ footer {
   background: #fff;
   color: #000;
   border: none;
-  padding: 8px 20px; /* maior */
+  padding: 8px 20px; 
   border-radius: 24px;
   font-size: 13px;
   font-weight: bold;

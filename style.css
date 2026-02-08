@@ -70,8 +70,8 @@ header nav a:hover {
 /* ESTILO DAS LISTAS (AS BOLINHAS) */
 .noticia-principal ul, 
 .card-v ul {
-  list-style-type: disc; /* Garante que a bolinha apareça */
-  padding-left: 20px;    /* Espaço para a bolinha não ficar fora do card */
+  list-style-type: disc; 
+  padding-left: 20px;   
   margin-top: 10px;
 }
 
@@ -150,7 +150,7 @@ img {
   font-size: 11px;
   border-radius: 6px;
   margin-top: 15px;
-  border-bottom: 4px solid #e60000; /* A linha vermelha da imagem */
+  border-bottom: 4px solid #e60000; 
 }
 
 
@@ -189,7 +189,7 @@ img {
 }
 
 .footer-logo img {
-  width: 90px; /* ajusta conforme seu PNG */
+  width: 90px; 
 }
 
 /* Texto copyright */
@@ -229,8 +229,6 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 14px;
-
-  /* empurra o bloco para a direita */
   margin-left: auto;
 }
 
@@ -241,7 +239,7 @@ img {
 }
 
 .footer-social i {
-  font-size: 22px; /* aumentou */
+  font-size: 22px; 
   cursor: pointer;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -256,7 +254,7 @@ img {
   background: #fff;
   color: #000;
   border: none;
-  padding: 8px 20px; /* maior */
+  padding: 8px 20px; 
   border-radius: 24px;
   font-size: 13px;
   font-weight: bold;
