@@ -89,13 +89,15 @@ header nav a:hover {
   font-size: 14px;
 }
 
-.destaque button {
+.destaque .btn-configurar {
   margin-top: 15px;
   padding: 8px 18px;
   border-radius: 20px;
-  border: none;
   background: #000;
   color: #fff;
+
+  text-decoration: none;
+  display: inline-block;
   cursor: pointer;
 }
 
