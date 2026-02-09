@@ -41,6 +41,14 @@ header nav a:hover {
   transition: 1s;
 }
 
+
+.icones-header img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  border-radius: 0;
+}
+
 .famosos-container {
   max-width: 1200px;
   margin: 40px auto;

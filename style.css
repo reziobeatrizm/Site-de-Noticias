@@ -41,6 +41,13 @@ header nav a:hover {
   transition: 1s;
 }
 
+.icones-header img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  border-radius: 0;
+}
+
 /* CONTAINER PRINCIPAL */
 .container-principal {
   max-width: 1100px;
