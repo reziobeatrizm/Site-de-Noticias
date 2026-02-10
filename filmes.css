@@ -1,23 +1,19 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-/* ===== HEADER ===== */
+/* ==================================================
+   HEADER
+================================================== */
 header {
-  background-color: #000000;
-  color: white;
+  background-color: #ff6803;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 80px;
-  padding-right: 80px;
-}
-
-.icones-header {
-  display: flex;
-  gap: 30px;
+  padding: 20px 80px;
 }
 
 header div:first-child img {
@@ -30,25 +26,27 @@ header nav {
 }
 
 header nav a {
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
 }
 
 header nav a:hover {
-  color: #e60000;
-  transition: 1s;
+  color: #923601;
+  transition: 0.3s;
 }
 
+.icones-header {
+  display: flex;
+  gap: 30px;
+}
 
 .icones-header img {
   width: 22px;
   height: 22px;
   object-fit: contain;
-  border-radius: 0;
 }
-
 
 /* --- CONFIGURAÇÕES DO JORNAL --- */
 .jornal-container {
@@ -681,4 +679,87 @@ footer {
 
 .btn-contato:hover {
   opacity: 0.85;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET */
+@media (max-width: 980px) {
+
+  header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  header nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .icones-header {
+    justify-content: center;
+  }
+
+  .jornal-grid-materias {
+    grid-template-columns: 1fr;
+  }
+
+  .jornal-topo-titulos {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .divisor-v {
+    display: none;
+  }
+
+  .item-streaming {
+    flex-direction: column;
+  }
+
+  .trailers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    padding: 30px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .footer-social {
+    margin-left: 0;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+
+  .topo-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .poster {
+    width: 100%;
+    height: auto;
+  }
+
+  .trailers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-streaming-real {
+    width: 100%;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 13px;
+  }
 }
